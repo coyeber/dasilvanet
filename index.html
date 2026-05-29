@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Relatório 2025 | Esporte e Recreação Unicap</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+:root{
+  --blue:#071b52;
+  --blue-2:#123b91;
+  --red:#c3162b;
+  --gold:#f5b51b;
+  --green:#16a05d;
+  --white:#ffffff;
+  --ink:#111827;
+  --muted:#667085;
+  --bg:#f4f7fb;
+  --card:#ffffff;
+  --shadow:0 24px 60px rgba(7,27,82,.16);
+  --radius:28px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.hero{min-height:100vh;background:linear-gradient(110deg,rgba(7,27,82,.94),rgba(7,27,82,.74)),url('assets/59C5014F-74D3-485A-82DD-1784471258A2.jpeg') center/cover; color:var(--white);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:9px;background:linear-gradient(90deg,var(--red),var(--gold),var(--green),var(--blue-2))}
+.navbar{width:min(1180px,92%);margin:auto;padding:28px 0;display:flex;align-items:center;justify-content:space-between;gap:24px;position:relative;z-index:1}
+.brand{display:flex;align-items:center;gap:12px}.brand-mark{width:48px;height:48px;border-radius:16px;background:var(--red);display:grid;place-items:center;font-family:Montserrat,sans-serif;font-weight:900}.brand strong{display:block;font-family:Montserrat,sans-serif;font-size:1.1rem}.brand small{opacity:.82}.nav-links{display:flex;gap:22px;flex-wrap:wrap}.nav-links a{font-weight:700;font-size:.92rem;opacity:.88}.nav-links a:hover{opacity:1;color:var(--gold)}
+.hero-content{width:min(1180px,92%);margin:auto;padding:130px 0 150px;position:relative;z-index:1}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.78rem;font-weight:900;color:var(--gold);margin-bottom:12px}.hero h1,.hero h2,.section-title h2,.profile-info h2,.split-section h2{font-family:Montserrat,sans-serif;line-height:1.02}.hero h1{font-size:clamp(3rem,8vw,7rem);max-width:980px}.hero h2{font-size:clamp(2rem,5vw,4.5rem);color:var(--gold);margin-top:8px}.hero-text{max-width:680px;font-size:1.2rem;margin-top:24px;color:rgba(255,255,255,.86)}.hero-actions{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}.btn{padding:14px 22px;border-radius:999px;font-weight:900}.btn.primary{background:var(--gold);color:var(--blue)}.btn.secondary{border:1px solid rgba(255,255,255,.4);color:var(--white);backdrop-filter:blur(10px)}
+.section{width:min(1180px,92%);margin:0 auto;padding:86px 0}.section-title{max-width:780px;margin-bottom:36px}.section-title h2{font-size:clamp(2rem,4vw,3.5rem);color:var(--blue)}.section-title p:not(.eyebrow){color:var(--muted);font-size:1.05rem;margin-top:10px}.section-title.light h2{color:var(--white)}
+.stats-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}.stat-card{background:var(--card);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);min-height:170px}.stat-card strong{display:block;font-family:Montserrat,sans-serif;font-size:clamp(2.1rem,4vw,3.9rem);color:var(--red);line-height:1}.stat-card span{display:block;margin-top:14px;color:var(--muted);font-weight:700}
+.profile-card{display:grid;grid-template-columns:380px 1fr;gap:38px;background:var(--white);padding:28px;border-radius:38px;box-shadow:var(--shadow);align-items:center}.profile-photo img{height:430px;width:100%;object-fit:cover;border-radius:28px}.profile-info h2{font-size:3rem;color:var(--blue);margin-bottom:12px}.profile-info p{font-size:1.08rem;color:var(--muted);margin-bottom:12px}.pill-grid{display:flex;flex-wrap:wrap;gap:14px}.pill-grid span,.mini-list span{background:var(--white);border:1px solid #dbe3f0;border-radius:999px;padding:13px 18px;font-weight:800;color:var(--blue);box-shadow:0 12px 26px rgba(7,27,82,.07)}
+.dark-section{width:100%;background:linear-gradient(135deg,var(--blue),#020617);padding:90px max(4%,calc((100% - 1180px)/2));color:var(--white)}.competition-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.competition-grid article{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:24px;backdrop-filter:blur(16px)}.competition-grid h3{font-family:Montserrat,sans-serif;margin-bottom:8px;color:var(--gold)}.competition-grid p{color:rgba(255,255,255,.82)}
+.split-section{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}.split-section h2{font-size:clamp(2.2rem,4vw,4rem);color:var(--blue);margin-bottom:16px}.lead{font-size:1.1rem;color:var(--muted);margin-bottom:22px}.mini-list{display:flex;flex-wrap:wrap;gap:12px}.split-section img{height:520px;width:100%;object-fit:cover;border-radius:34px;box-shadow:var(--shadow)}
+.timeline{display:grid;gap:16px}.timeline-item{background:var(--white);border-left:8px solid var(--red);border-radius:22px;padding:24px 26px;box-shadow:0 12px 34px rgba(7,27,82,.08)}.timeline-item span{display:block;font-family:Montserrat,sans-serif;font-weight:900;color:var(--blue);font-size:1.1rem;margin-bottom:4px}.timeline-item p{color:var(--muted);font-weight:600}.partnership-section{padding-top:30px}.course-columns{display:grid;grid-template-columns:1fr 1.3fr;gap:24px}.course-box{background:var(--white);border-radius:30px;padding:30px;box-shadow:var(--shadow)}.course-box h3{font-family:Montserrat,sans-serif;color:var(--blue);font-size:1.5rem;margin-bottom:14px}.course-box ul{list-style:none;columns:2;column-gap:30px}.course-box li{break-inside:avoid;margin:8px 0;padding-left:18px;position:relative;font-weight:700;color:var(--muted)}.course-box li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--red);position:absolute;left:0;top:.62em}
+.training-section{width:100%;background:linear-gradient(135deg,#111827,var(--blue));padding:90px max(4%,calc((100% - 1180px)/2));color:var(--white)}.training-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.training-cards article{border-radius:26px;padding:28px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.13)}.training-cards h3{font-family:Montserrat,sans-serif;color:var(--gold);margin-bottom:10px}.training-cards p{color:rgba(255,255,255,.82)}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:260px;gap:16px}.gallery-grid img{width:100%;height:100%;object-fit:cover;border-radius:24px;box-shadow:0 12px 30px rgba(7,27,82,.12);transition:.3s}.gallery-grid img:hover{transform:translateY(-6px) scale(1.01)}.gallery-grid .wide{grid-column:span 2}.gallery-grid .tall{grid-row:span 2}
+footer{background:#020617;color:var(--white);padding:34px max(4%,calc((100% - 1180px)/2));display:flex;justify-content:space-between;gap:20px;align-items:center}footer strong{font-family:Montserrat,sans-serif;font-size:1.15rem}footer p{color:rgba(255,255,255,.7);margin-top:4px}footer a{font-weight:900;color:var(--gold)}
+@media(max-width:980px){.nav-links{display:none}.stats-grid{grid-template-columns:repeat(2,1fr)}.profile-card,.split-section,.course-columns{grid-template-columns:1fr}.competition-grid,.training-cards{grid-template-columns:1fr}.gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:220px}.gallery-grid .wide,.gallery-grid .tall{grid-column:auto;grid-row:auto}.profile-photo img,.split-section img{height:360px}}
+@media(max-width:560px){.hero-content{padding:80px 0 120px}.section{padding:62px 0}.stats-grid{grid-template-columns:1fr}.stat-card{min-height:auto}.course-box ul{columns:1}.gallery-grid{grid-template-columns:1fr;grid-auto-rows:250px}footer{display:block}.profile-card{padding:16px;border-radius:26px}.profile-info h2{font-size:2.2rem}}
+
+  </style>
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="navbar">
+      <div class="brand">
+        <span class="brand-mark">U</span>
+        <div>
+          <strong>Unicap</strong>
+          <small>Esporte e Recreação</small>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="#modalidades">Modalidades</a>
+        <a href="#competicoes">Competições</a>
+        <a href="#titulos">Títulos</a>
+        <a href="#galeria">Galeria</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <p class="eyebrow">Relatório / Portfólio institucional</p>
+      <h1>Esporte e Recreação da Unicap</h1>
+      <h2>Relatório 2025</h2>
+      <p class="hero-text">
+        Um ano de integração, formação, competição e valorização do esporte universitário dentro e fora da Universidade Católica de Pernambuco.
+      </p>
+      <div class="hero-actions">
+        <a href="#resumo" class="btn primary">Ver relatório</a>
+        <a href="#galeria" class="btn secondary">Ver fotos</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section stats-section" id="resumo">
+      <div class="section-title">
+        <p class="eyebrow">Resumo do ano</p>
+        <h2>Números de impacto</h2>
+      </div>
+      <div class="stats-grid">
+        <article class="stat-card"><strong>880</strong><span>alunos inscritos na Supercopa da Unicap</span></article>
+        <article class="stat-card"><strong>11</strong><span>cursos inscritos nos jogos internos</span></article>
+        <article class="stat-card"><strong>6</strong><span>modalidades disputadas na Supercopa</span></article>
+        <article class="stat-card"><strong>4 mil+</strong><span>pessoas no público geral do evento</span></article>
+        <article class="stat-card"><strong>1.500</strong><span>alunos nas finais com ginásio lotado</span></article>
+      </div>
+    </section>
+
+    <section class="section profile-section">
+      <div class="profile-card">
+        <div class="profile-photo"><img src="assets/88AA3705-8F29-42B2-ACBD-F5C4ED3775F2.jpeg" alt="Professor Da Silva em evento esportivo da Unicap"></div>
+        <div class="profile-info">
+          <p class="eyebrow">Coordenação técnica</p>
+          <h2>Prof. Da Silva</h2>
+          <p>Técnico de recreação esportiva e futsal.</p>
+          <p>Responsável pelo acompanhamento das atividades, incentivo aos atletas e fortalecimento do esporte como ferramenta de integração universitária.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="modalidades">
+      <div class="section-title">
+        <p class="eyebrow">Atividades praticadas</p>
+        <h2>Modalidades desenvolvidas em 2025</h2>
+      </div>
+      <div class="pill-grid">
+        <span>Futsal feminino</span><span>Futsal masculino</span><span>Vôlei feminino</span><span>Vôlei masculino</span>
+        <span>Basquete masculino</span><span>Futebol de campo</span><span>Fut7</span><span>Futebol de areia</span>
+        <span>Beach tênis</span><span>Futevôlei masculino</span><span>Futevôlei feminino</span><span>Karatê</span><span>Atletismo</span>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="competicoes">
+      <div class="section-title light">
+        <p class="eyebrow">Competições universitárias</p>
+        <h2>Disputas realizadas</h2>
+      </div>
+      <div class="competition-grid">
+        <article><h3>Futsal</h3><p>Jogos Universitários de Pernambuco, Copa Verão Universitária, Copa da Amizade Universitária e Copa das Estrelas Universitária.</p></article>
+        <article><h3>Voleibol masculino e feminino</h3><p>Supercopa da Unicap.</p></article>
+        <article><h3>Basquete</h3><p>Supercopa da Unicap.</p></article>
+        <article><h3>Futevôlei masculino e feminino</h3><p>Jogos Universitários de Pernambuco.</p></article>
+        <article><h3>Fut7</h3><p>Jogos Universitários de Pernambuco.</p></article>
+        <article><h3>Futebol de areia</h3><p>Jogos Universitários de Pernambuco.</p></article>
+        <article><h3>Futebol de campo</h3><p>Jogos Universitários de Pernambuco.</p></article>
+        <article><h3>Beach tênis</h3><p>Jogos Universitários de Pernambuco.</p></article>
+        <article><h3>Karatê</h3><p>Jogos Universitários de Pernambuco.</p></article>
+        <article><h3>Atletismo</h3><p>Jogos Universitários de Pernambuco.</p></article>
+      </div>
+    </section>
+
+    <section class="section split-section">
+      <div>
+        <p class="eyebrow">Jogos internos</p>
+        <h2>Supercopa da Unicap</h2>
+        <p class="lead">Os jogos internos movimentaram a comunidade acadêmica com modalidades disputadas pelos alunos, fortalecendo a integração entre cursos e promovendo vivências esportivas dentro da universidade.</p>
+        <div class="mini-list">
+          <span>Vôlei feminino e masculino</span><span>Basquete</span><span>Futsal feminino e masculino</span><span>Futmesa masculino</span>
+        </div>
+      </div>
+      <img src="assets/8191B312-E567-4FD7-B13C-927B0761AD9C.jpeg" alt="Equipe Unicap em quadra">
+    </section>
+
+    <section class="section" id="titulos">
+      <div class="section-title">
+        <p class="eyebrow">Conquistas</p>
+        <h2>Títulos e resultados de destaque</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item"><span>Futsal</span><p>Vice-campeão universitário de Pernambuco.</p></div>
+        <div class="timeline-item"><span>Futebol de campo</span><p>Campeão da Copa da Amizade Universitária, campeão da Copa Verão Universitária, campeão da Copa das Estrelas Universitária e vice-campeão universitário de Pernambuco.</p></div>
+        <div class="timeline-item"><span>Fut7</span><p>Vice-campeão universitário de Pernambuco.</p></div>
+        <div class="timeline-item"><span>Futebol de areia</span><p>Vice-campeão universitário de Pernambuco.</p></div>
+        <div class="timeline-item"><span>Beach tênis</span><p>Vice-campeão universitário de Pernambuco.</p></div>
+        <div class="timeline-item"><span>Futevôlei masculino e feminino</span><p>Vice-campeão universitário de Pernambuco.</p></div>
+        <div class="timeline-item"><span>Karatê feminino</span><p>Vice-campeão de Pernambuco.</p></div>
+      </div>
+    </section>
+
+    <section class="section partnership-section">
+      <div class="section-title">
+        <p class="eyebrow">Integração acadêmica</p>
+        <h2>O esporte em parceria com os cursos</h2>
+      </div>
+      <div class="course-columns">
+        <div class="course-box">
+          <h3>Parcerias com cursos</h3>
+          <ul>
+            <li>Administração</li><li>Fotografia</li><li>Jornalismo</li><li>Psicologia</li><li>Fisioterapia</li><li>Medicina</li>
+          </ul>
+        </div>
+        <div class="course-box">
+          <h3>Cursos participantes da Supercopa</h3>
+          <ul>
+            <li>Direito</li><li>Medicina</li><li>Administração</li><li>Ciências da Computação</li><li>Sistemas para Internet</li><li>Matemática</li><li>Arquitetura</li><li>Engenharia da Complexidade</li><li>Fisioterapia</li><li>História</li><li>Jornalismo</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section training-section">
+      <div class="section-title light">
+        <p class="eyebrow">Treinos recreativos internos</p>
+        <h2>Atividades permanentes</h2>
+      </div>
+      <div class="training-cards">
+        <article><h3>Vôlei feminino e masculino</h3><p>Treinos recreativos com foco em participação, evolução técnica e integração dos alunos.</p></article>
+        <article><h3>Basquete</h3><p>Vivências esportivas e prática coletiva para desenvolvimento dos estudantes.</p></article>
+        <article><h3>Futsal</h3><p>Atividades internas voltadas à recreação, competição saudável e formação esportiva.</p></article>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="galeria">
+      <div class="section-title">
+        <p class="eyebrow">Memória visual</p>
+        <h2>Galeria do esporte universitário</h2>
+        <p>Imagens dos jogos, premiações, equipes, torcida, integração com os cursos e momentos marcantes da trajetória esportiva da Unicap, incluindo registros da Supercopa da Unicap.</p>
+      </div>
+      <div class="gallery-grid">
+        <img class="wide" src="assets/ABD0D496-E3D7-4E4F-ADCC-D496C648545E.jpeg" alt="Conquista do futsal Unicap">
+        <img src="assets/9D4634EC-1375-4C53-BCA4-D37E081082F5.jpeg" alt="Equipe de futsal Unicap">
+        <img class="tall" src="assets/03E546D0-DBF0-41D4-9DFC-0EFFC0AAE4EE.jpeg" alt="Equipe Unicap bicampeã">
+        <img src="assets/E78EE9BD-B552-4813-8BC5-695DFC9DC6A9.jpeg" alt="Premiação nos Jogos Universitários">
+        <img src="assets/EF5A3C39-EE6A-4082-A872-81932F4AF3D9.jpeg" alt="Equipe Unicap em celebração">
+        <img src="assets/D4FF183F-F497-4DA1-AE45-3DC42727DB47.jpeg" alt="Futevôlei Unicap">
+        <img src="assets/59C5014F-74D3-485A-82DD-1784471258A2.jpeg" alt="Vôlei Unicap vice-campeão">
+        <img class="wide" src="assets/C69DF312-7652-4F56-B9D6-00122DF43CEE.jpeg" alt="Professor Da Silva orientando atividade esportiva">
+        <img src="assets/supercopa-grupo-quadra.jpg" alt="Grupo reunido na quadra durante a Supercopa da Unicap">
+        <img src="assets/supercopa-basquete-acao.jpg" alt="Partida de basquete na Supercopa da Unicap">
+        <img class="tall" src="assets/torcida-celebracao.jpg" alt="Torcida e atletas em momento de celebração na arquibancada">
+        <img src="assets/futsal-quadra-lotada.jpg" alt="Partida de futsal com ginásio lotado">
+        <img class="wide" src="assets/publico-ginasio.jpg" alt="Público acompanhando os jogos no ginásio da Unicap">
+        <img src="assets/parceria-estudantes.jpg" alt="Registro de integração entre estudantes e esporte na Unicap">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>Esporte e Recreação da Unicap</strong>
+      <p>Relatório 2025 • Prof. Da Silva • Técnico de recreação esportiva e futsal</p>
+    </div>
+    <a href="#inicio">Voltar ao topo</a>
+  </footer>
+</body>
+</html>
